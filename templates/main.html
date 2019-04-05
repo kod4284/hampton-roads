@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<link rel=stylesheet type=text/css href="{{url_for('static', filename='styles.css') }}"> 	<!-- ../static/styles.css-->
 
+<head>
+	<link rel=stylesheet type=text/css href="{{url_for('static', filename='styles.css') }}"> <!-- ../static/styles.css-->
+	<style type="text/css">
+		a {
+			color: black;
+			text-decoration: none
+		}
+	</style>
+</head>
 
+<body>
+	<header>
+		<div class="header">
 
-	</head>
-  <body>
-    <header>
-  		<div class = "header">
+			<h1 class="title">Eco District <br>Hampton Roads</h1>
+		</div>
+		<div class="home">
+			<a href="{{url_for('showMain')}}"> Home &nbsp&nbsp&nbsp&nbsp</a>
+			<a> About Us &nbsp&nbsp&nbsp&nbsp</a>
+			<a href="{{url_for('showSurvey')}}"> Survey &nbsp&nbsp&nbsp&nbsp</a>
+			<a> News &nbsp&nbsp&nbsp&nbsp</a>
+			<a> Report &nbsp&nbsp&nbsp&nbsp</a>
+			<a> Education &nbsp&nbsp&nbsp</a>
+		</div>
+		<div class="login_button">
+			<button type="button" onclick="location.href='{{url_for('showLogin')}}' ">Admin Login</button>
+		</div>
 
-  			<h1 class="title">Eco District <br>Hampton Roads</h1>
-  		</div>
-			<div class="home">
-				<a href="{{url_for('showMain')}}"> Home &nbsp&nbsp&nbsp&nbsp</a>
-				<a> About Us &nbsp&nbsp&nbsp&nbsp</a>
-				<a href="{{url_for('showSurvey')}}"> Surverys &nbsp&nbsp&nbsp&nbsp</a>
-				<a> News   &nbsp&nbsp&nbsp&nbsp</a>
-				<a> Report   &nbsp&nbsp&nbsp&nbsp</a>
-				<a> Education &nbsp&nbsp&nbsp</a>
+	</header>
+	<section>
+		<center>
+			<div>
+				<img src="../static/main.jpg" width="1410" height="710">
 			</div>
-			<div class="login_button">
-				<button type="button" onclick="location.href='{{url_for('showLogin')}}' ">Admin Login</button>
-			</div>
+		</center>
+	</section>
+</body>
 
-  	</header>
-    <section>
-      <center>
-      	<div>
-					<img src="../static/main.jpg" width="1410" height="710">
-      	</div>
-      </center>
-    </section>
-  </body>
 </html>
