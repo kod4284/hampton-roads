@@ -183,13 +183,13 @@ def gdisconnect():
 
 # Show all catalogs
 @app.route('/')
-@app.route('/catalog/')
+@app.route('/hamptonroads/')
 def showCatalog():
     if 'username' not in login_session:
-        return render_template('main.html', category=categories, item=items)
+        return render_template('main.html')
     else:
         return render_template(
-            'private_main.html', category=categories, item=items)
+            'private_main.html')
 
 
 
