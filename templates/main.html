@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link rel=stylesheet type=text/css href="../static/styles.css"> 	<!-- {{ url_for('static', filename='styles.css') }}-->
+		<link rel=stylesheet type=text/css href="{{url_for('static', filename='styles.css') }}"> 	<!-- ../static/styles.css-->
 
 
 
@@ -13,9 +13,9 @@
   			<h1 class="title">Eco District <br>Hampton Roads</h1>
   		</div>
 			<div class="home">
-				<a> Home &nbsp&nbsp&nbsp&nbsp</a>
+				<a href="{{url_for('showMain')}}"> Home &nbsp&nbsp&nbsp&nbsp</a>
 				<a> About Us &nbsp&nbsp&nbsp&nbsp</a>
-				<a> Surverys &nbsp&nbsp&nbsp&nbsp</a>
+				<a href="{{url_for('showSurvey')}}"> Surverys &nbsp&nbsp&nbsp&nbsp</a>
 				<a> News   &nbsp&nbsp&nbsp&nbsp</a>
 				<a> Report   &nbsp&nbsp&nbsp&nbsp</a>
 				<a> Education &nbsp&nbsp&nbsp</a>

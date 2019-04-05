@@ -184,7 +184,7 @@ def gdisconnect():
 # Show all catalogs
 @app.route('/')
 @app.route('/hamptonroads/')
-def showCatalog():
+def showMain():
     if 'username' not in login_session:
         return render_template('main.html')
     else:
@@ -192,6 +192,9 @@ def showCatalog():
             'private_main.html')
 
 
+@app.route('/hamptonroads/survey')
+def showSurvey():
+    return render_template('survey.html')
 
 if __name__ == '__main__':
     app.secret_key = 'super_secret_key'
