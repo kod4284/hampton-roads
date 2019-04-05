@@ -185,8 +185,6 @@ def gdisconnect():
 @app.route('/')
 @app.route('/catalog/')
 def showCatalog():
-    categories = session.query(Category).order_by(asc(Category.name))
-    items = session.query(Item).order_by(desc(Item.id))
     if 'username' not in login_session:
         return render_template('main.html', category=categories, item=items)
     else:
