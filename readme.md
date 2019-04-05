@@ -3,8 +3,10 @@
 
 Introduction
 ------------
-	ECO Districts Hampton Roads is a progressive project in Hampton Roads, Virginia. The
+
+ECO Districts Hampton Roads is a progressive project in Hampton Roads, Virginia. The
 building foundation for ECO Districts derives an emphasis on three imperatives--climate action, resilience, and equity. With over 5,000 homes and 12,000 residents in the community, in order to progressively transform a community of this size, communication is key. With the push of modern technology through websites and mobile applications today, the managing director of ECO Districts Hampton Roads, Gary Harris, decided that a web-based platform would promote community involvement which is where our team plays a role.
+
 
 Server Configuration
 --------------------
@@ -135,9 +137,11 @@ sudo -H pip3 install Flask-SQLAlchemy
 
 Install Flask
 -------------
+For python2:
 ```shell
 pip install flask
 ```
+For python3:
 ```shell
 pip3 install Flask
 ```
