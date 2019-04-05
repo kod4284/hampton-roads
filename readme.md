@@ -137,9 +137,11 @@ sudo -H pip3 install Flask-SQLAlchemy
 
 Install Flask
 -------------
+For python2:
 ```shell
 pip install flask
 ```
+For python3:
 ```shell
 pip3 install Flask
 ```
