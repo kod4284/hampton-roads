@@ -180,8 +180,6 @@ def gdisconnect():
         response.headers['Content-Type'] = 'application/json'
         return response
 
-
-# Show all catalogs
 @app.route('/')
 @app.route('/hamptonroads/')
 def showMain():
