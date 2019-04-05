@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel=stylesheet type=text/css href="../static/styles.css"> 	<!-- {{ url_for('static', filename='styles.css') }}-->
+	</head>
+  <body>
+    <header>
+  		<div class = "header">
+
+  			<h1 class="title">Eco District <br>Hampton Roads</h1>
+  		</div>
+			<div class="home">
+				<a> Home &nbsp&nbsp&nbsp&nbsp</a>
+				<a> About Us &nbsp&nbsp&nbsp&nbsp</a>
+				<a> Surverys &nbsp&nbsp&nbsp&nbsp</a>
+				<a> News   &nbsp&nbsp&nbsp&nbsp</a>
+				<a> Report   &nbsp&nbsp&nbsp&nbsp</a>
+				<a> Education &nbsp&nbsp&nbsp</a>
+			</div>
+			<div class="login_button">
+				<button type="button" onclick="location.href='{{url_for('showLogin')}}' ">Admin Login</button>
+			</div>
+  	</header>
+    <section>
+			<center>
+			<div class="survey_tab">
+				<div class="backed_block">
+					<p class="survey_links">Survey Links</p>
+					<div class="btn_group">
+					<button type="button" onclick="popup();">Survey1</button><br>
+					<button type="button" onclick="popup();">Survey2</button><br>
+					<button type="button" onclick="popup();">Survey3</button><br>
+					<button type="button" onclick="popup();">Survey4</button><br>
+					<button type="button" onclick="popup();">Survey5</button><br>
+				</div>
+					<script type="text/javascript">
+						var g_oWindow = null;
+						var g_oInterval = null;
+						var popup = function() {
+							g_oWindow = window.open('https://docs.google.com/forms/d/e/1FAIpQLSdrOjioTbpBvrMZm1yUyr8QsOcM8D407DGNt2j4LyzC0P7JoQ/viewform?entry.154898374=5&entry.1316137837=4&entry.394501982=4&entry.1040528993=5&entry.1295311122=4&entry.1089443498=4&entry.647798081=4', 'Hampton Road Survey');
+							g_oInterval = window.setInterval(function() {
+								try {
+									if( g_oWindow == null || g_oWindow.closed ) {
+											window.clearInterval(g_oInterval);
+											g_oWindow = null;
+
+										alert('Thank you for submitting the survey');
+									}
+								} catch (e) { }
+							}, 500);
+						};
+					</script>
+				</div>
+
+			</div>
+		</center>
+    </section>
+
+  </body>
+</html>

@@ -1,23 +1,69 @@
 header {
-  text-align: 100px;
-  margin-right: auto;
-	margin-left: auto;
-  padding: 10px;
-  background-color: #0B0B61;
+  margin-right: 20px;
+  margin-top: 20px;
+	margin-left: 90px;
+  margin-bottom: 20px;
+  padding: 1px;
+  background-color: #ffffff;
 }
 section {
+  background-image: url("../static/main.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: #A4A4A4;
+}
+.survey_links {
+  font-size: 40px
+
+}
+.survey_tab {
+
+  width:1410px;
+  height:710px;
+
+}
+.btn_group button {
+  padding: 15px 32px;
+  font-size: 16px;
+  background-color: #b6ecb8; /* Green background */
+  border: 1px solid green; /* Green border */
+  padding-left: 200px;
+  padding-right: 200px;
+  margin-bottom: 10px;
+  cursor: pointer; /* Pointer/hand icon */
+  float: left;
+}
+.backed_block {
+  margin-right: 500px;
+  margin-top: 20px;
+	margin-left: 400px;
+  margin-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+  padding-top: 10px;
+  background-color: #ffffff;
+  position: absolute;
+
+}
+.home {
+  font-size: 120%;
+  margin-left: 350px;
+}
+.login_button {
+  margin-left: 1100px;
 }
 .cate_name {
   font-size: 150%;
   color: #0B0B61;
 }
 .title {
-  color: #fff;
+  font-size: 150%;
+  color: rgb(0, 0, 0);
 }
 .header {
   width:100%;
-  height:60px;
+  height:20px;
 }
 .wrapper {
   width:900px;
