@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, redirect, jsonify, url_for
 from flask import make_response, flash
 from sqlalchemy import create_engine, asc, desc
 from sqlalchemy.orm import sessionmaker
-from database_setup import Base, Category, Item, User
+from database_setup import Base, User
 from flask import session as login_session
 import random
 import string
@@ -15,11 +15,11 @@ import requests
 
 app = Flask(__name__)
 
-APPLICATION_NAME = "Catalog Application"
+APPLICATION_NAME = "Hampton Roads"
 CLIENT_ID = json.loads(
     open('/var/www/html/client_secrets.json', 'r').read())['web']['client_id']
 # Connect to Database and create database session
-engine = create_engine('postgresql://catalog:catalog@localhost/catalog.db')
+engine = create_engine('postgresql://daewoong:daewoong@localhost/hamptonRoads.db')
 Base.metadata.bind = engine
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
