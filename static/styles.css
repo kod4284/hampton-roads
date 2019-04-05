@@ -50,6 +50,9 @@ section {
   font-size: 120%;
   margin-left: 350px;
 }
+.home a {
+  text-decoration:none;
+}
 .login_button {
   margin-left: 1100px;
 }
