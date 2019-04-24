@@ -21,7 +21,7 @@ section {
   height:710px;
 }
 .survey_tab {
-
+  background-color: #F5FCFF;
   width:1410px;
   height:710px;
 
@@ -46,7 +46,7 @@ section {
   padding-right: 100px;
   padding-bottom: 100px;
   padding-top: 10px;
-  background-color: #ffffff;
+  background-color: #B7E9F7;
   position: absolute;
 
 }
