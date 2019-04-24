@@ -38,6 +38,7 @@ section {
   float: left;
 }
 .backed_block {
+  font-family: arial;
   margin-right: 500px;
   margin-top: 20px;
 	margin-left: 400px;
@@ -51,7 +52,7 @@ section {
 
 }
 .home {
-  font: arial;
+  font-family: arial;
   font-size: 120%;
   margin-left: 350px;
 }
@@ -67,7 +68,7 @@ section {
 }
 .title {
   font-size: 150%;
-  font: arial;
+  font-family: arial;
   color: rgb(0, 0, 0);
 }
 .header {
