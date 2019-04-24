@@ -51,6 +51,7 @@ section {
 
 }
 .home {
+  font: arial;
   font-size: 120%;
   margin-left: 350px;
 }
